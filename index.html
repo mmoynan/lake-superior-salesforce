@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Lake Superior Consulting + Salesforce | Digital Proposal</title>
+<style>
+:root{color-scheme:light;
+--navy:#032D60;--navy2:#05406E;--blue:#0176D3;--blueMid:#1B96FF;--sky:#00A1E0;
+--blueBg:#EAF5FE;--blueBg2:#CFE9FE;--blueLine:#A6CDF5;
+--orange:#FE9339;--orangeBg:#FEF1E5;--orangeInk:#8C4B02;
+--green:#2E844A;--greenBg:#EBF7ED;--red:#BA0517;--redBg:#FDF0F0;--redLine:#F0C4C4;
+--ink:#181818;--ink2:#464646;--ink3:#767676;--line:#E5E5E5;--bg:#fff;--soft:#F5F8FB;
+--sh:0 1px 2px rgba(3,45,96,.05),0 4px 14px rgba(3,45,96,.05);
+--shH:0 2px 4px rgba(3,45,96,.07),0 10px 28px rgba(3,45,96,.10)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:74px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Salesforce Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased}
+svg.ic{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+#prog{position:fixed;top:0;left:0;height:3px;background:var(--blueMid);width:0;z-index:99;transition:width .1s}
+nav{position:sticky;top:0;z-index:60;background:rgba(3,45,96,.98);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(255,255,255,.1)}
+.navin{max-width:1080px;margin:0 auto;padding:0 28px;height:60px;display:flex;align-items:center;gap:24px}
+.brand{display:flex;align-items:center;gap:9px;font-size:14px;font-weight:700;color:#fff;white-space:nowrap}
+.brand svg{width:20px;height:20px;stroke:var(--blueMid);fill:none;stroke-width:1.8}
+.navlinks{display:flex;gap:4px;overflow-x:auto;margin-left:auto;scrollbar-width:none}
+.navlinks::-webkit-scrollbar{display:none}
+.navlinks a{font-size:13px;color:#B3D2EE;text-decoration:none;white-space:nowrap;padding:7px 11px;border-radius:5px;transition:.15s}
+.navlinks a:hover{color:#fff;background:rgba(255,255,255,.1)}
+.navlinks a.act{color:#fff;background:var(--blue)}
+header{background:linear-gradient(170deg,#032D60 0%,#05406E 100%);color:#fff;padding:78px 0 0;position:relative;overflow:hidden}
+header .orb{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(27,150,255,.22),transparent 68%)}
+header .o1{right:-140px;top:-160px;width:520px;height:520px}
+header .o2{left:-100px;bottom:-180px;width:380px;height:380px;background:radial-gradient(circle,rgba(0,161,224,.16),transparent 68%)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;color:#9FD0FF;margin:0 0 20px;font-weight:700;position:relative;background:rgba(27,150,255,.14);padding:7px 14px;border-radius:30px}
+header h1{font-size:46px;line-height:1.1;margin:0 0 20px;font-weight:700;letter-spacing:-1.2px;position:relative;max-width:840px}
+.lede{font-size:18.5px;color:#CFE3F6;margin:0 0 32px;max-width:700px;position:relative}
+.btns{display:flex;gap:12px;flex-wrap:wrap;position:relative;margin-bottom:56px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 26px;border-radius:6px;font-size:14.5px;font-weight:700;text-decoration:none;transition:.16s;cursor:pointer;border:0;font-family:inherit}
+.btn svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:2}
+.btn-p{background:var(--blue);color:#fff;box-shadow:0 4px 14px rgba(1,118,211,.35)}
+.btn-p:hover{background:var(--blueMid);transform:translateY(-1px)}
+.btn-s{background:rgba(255,255,255,.08);color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.45)}
+.btn-s:hover{background:rgba(255,255,255,.16)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;position:relative;padding-bottom:40px}
+.stat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);border-radius:10px;padding:22px}
+.stat svg{width:20px;height:20px;stroke:var(--blueMid);fill:none;stroke-width:1.8;margin-bottom:12px}
+.stat .v{font-size:40px;font-weight:700;color:#fff;letter-spacing:-1.4px;line-height:1}
+.stat .l{font-size:13px;color:#A9C9E8;margin-top:8px;line-height:1.45}
+section{padding:66px 0;border-bottom:1px solid var(--line)}
+section.tint{background:var(--soft)}
+section.dark{background:linear-gradient(170deg,#032D60,#05406E);color:#fff;border-bottom:0}
+.shead{margin-bottom:34px}
+.kicker{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--blue);background:var(--blueBg);padding:6px 13px;border-radius:30px;margin:0 0 15px}
+.kicker svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2}
+section.dark .kicker{background:rgba(27,150,255,.18);color:#9FD0FF}
+h2{font-size:31px;font-weight:700;margin:0 0 11px;letter-spacing:-.7px;color:var(--navy);line-height:1.2}
+section.dark h2{color:#fff}
+.sub{color:var(--ink3);font-size:15.5px;margin:0;max-width:760px}
+section.dark .sub{color:#A9C9E8}
+h3{font-size:17px;font-weight:700;margin:0 0 7px;color:var(--navy)}
+p{margin:0 0 12px}
+.js .rv{opacity:0;transform:translateY(14px)}
+.rv{transition:opacity .5s ease,transform .5s ease}
+.rv.in{opacity:1;transform:none}
+.card{border:1px solid var(--line);border-radius:10px;padding:24px;background:#fff;box-shadow:var(--sh);margin-bottom:14px}
+.card.hi{border-color:var(--blueLine);background:var(--blueBg);box-shadow:none}
+.icb{width:42px;height:42px;border-radius:9px;background:var(--blueBg);color:var(--blue);display:flex;align-items:center;justify-content:center;margin-bottom:15px}
+.icb.or{background:var(--orangeBg);color:var(--orangeInk)}
+.icb.rd{background:var(--redBg);color:var(--red)}
+.pillar{border:1px solid var(--line);border-radius:12px;padding:30px;background:#fff;box-shadow:var(--sh);margin-bottom:16px;position:relative;overflow:hidden}
+.pillar:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--blue)}
+.pillar.orangeTop:before{background:var(--orange)}
+.pillar .n{font-size:11.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--blue);margin:0 0 12px}
+.pillar.orangeTop .n{color:var(--orangeInk)}
+.pillar h3{font-size:21px;margin-bottom:12px;line-height:1.28}
+.pillar p{color:var(--ink2);margin-bottom:0;font-size:15.5px}
+.pillar p+p{margin-top:13px}
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:12px;margin:26px 0 0;align-items:center}
+.step3{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:20px 18px;text-align:center}
+.step3 svg{width:22px;height:22px;stroke:var(--blue);fill:none;stroke-width:1.8;margin-bottom:10px}
+.step3 .t{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);margin:0 0 7px}
+.step3 .d{font-size:13.5px;color:var(--ink2);margin:0;line-height:1.5}
+.arw{display:flex;align-items:center;justify-content:center;color:var(--blueLine)}
+.arw svg{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.6}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.g4{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pri{border:1px solid var(--line);border-radius:12px;padding:26px;background:#fff;box-shadow:var(--sh);position:relative}
+.pri .badge{position:absolute;top:22px;right:24px;font-size:38px;font-weight:700;color:var(--blueBg2);line-height:1;letter-spacing:-2px}
+.pri h3{font-size:18px;margin-bottom:9px;padding-right:44px}
+.pri p{font-size:14.8px;color:var(--ink2);margin:0}
+ul{margin:10px 0 0;padding-left:0;list-style:none}
+li{margin-bottom:11px;color:var(--ink2);display:flex;gap:11px;font-size:14.8px;align-items:flex-start}
+li svg{width:17px;height:17px;stroke:var(--green);fill:none;stroke-width:2.4;margin-top:4px;flex-shrink:0}
+li strong{color:var(--ink);font-weight:700}
+.bacmp{border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--sh);background:#fff}
+.bahead{display:grid;grid-template-columns:186px 1fr 1fr}
+.bahead div{padding:16px 22px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.bahead .h0{background:var(--navy);color:#fff}
+.bahead .h1{background:#F7E9E9;color:var(--red);display:flex;align-items:center;gap:8px}
+.bahead .h2{background:var(--blueBg2);color:var(--navy);display:flex;align-items:center;gap:8px}
+.bahead svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2.2}
+.barow{display:grid;grid-template-columns:186px 1fr 1fr;border-top:1px solid var(--line)}
+.barow>div{padding:17px 22px;font-size:14.5px}
+.barow .lbl{font-weight:700;color:var(--navy);background:var(--soft);font-size:14px}
+.barow .now{color:var(--ink2);background:var(--redBg)}
+.barow .aft{color:var(--ink2);background:var(--blueBg)}
+.flip{height:224px;perspective:1400px;cursor:pointer}
+.fin{position:relative;width:100%;height:100%;transition:transform .6s cubic-bezier(.4,.2,.2,1);transform-style:preserve-3d}
+.flip.on .fin{transform:rotateY(180deg)}
+.fface{position:absolute;inset:0;backface-visibility:hidden;border-radius:12px;padding:24px;border:1px solid var(--line);background:#fff;display:flex;flex-direction:column;box-shadow:var(--sh)}
+.fback{transform:rotateY(180deg);border-color:var(--blueLine);background:var(--blueBg)}
+.fface h3{font-size:17px;margin-bottom:8px}
+.fface p{font-size:14.2px;color:var(--ink2);margin:0}
+.fhint{margin-top:auto;font-size:12px;color:var(--blue);font-weight:700;display:flex;align-items:center;gap:6px;padding-top:12px}
+.fhint svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2.2}
+.acc{border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:12px;overflow:hidden;box-shadow:var(--sh)}
+.acch{padding:22px 24px;cursor:pointer;display:flex;align-items:center;gap:16px;background:#fff;border:0;width:100%;text-align:left;font-family:inherit;transition:.15s}
+.acch:hover{background:var(--soft)}
+.acch h3{margin:0}
+.acch .cap{font-size:13.8px;color:var(--ink3);display:block;margin-top:3px;font-weight:400}
+.acch .ico{width:38px;height:38px;border-radius:9px;background:var(--blueBg);color:var(--blue);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.chev{color:var(--blue);transition:.25s;flex-shrink:0}
+.chev svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2.2}
+.acc.on .chev{transform:rotate(180deg)}
+.accb{display:none;padding:4px 24px 24px 78px;border-top:1px solid var(--line)}
+.acc.on .accb{display:block}
+.lay{border:1px solid var(--line);border-radius:12px;padding:24px;background:#fff;box-shadow:var(--sh);margin-bottom:12px;display:flex;gap:18px}
+.lay .icb{margin-bottom:0}
+.lay.mule .icb{background:#E1F5FD;color:#0B7EA8}
+.lay.keep .icb{background:#EFEFEF;color:var(--ink3)}
+.lay h3{margin-bottom:5px}
+.lay p{font-size:14.8px;color:var(--ink2);margin:0}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}
+.chip{font-size:12.5px;background:var(--soft);color:var(--ink2);padding:5px 12px;border-radius:30px;border:1px solid var(--line);font-weight:600}
+.conn{display:flex;justify-content:center;padding:2px 0 10px;color:var(--blueLine)}
+.conn svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.6}
+.stepper{border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden;box-shadow:var(--sh)}
+.stnav{display:flex;overflow-x:auto;border-bottom:1px solid var(--line);background:var(--soft);scrollbar-width:none}
+.stnav::-webkit-scrollbar{display:none}
+.stnav button{flex:0 0 auto;padding:15px 18px;border:0;background:transparent;font-size:13px;font-weight:700;color:var(--ink3);cursor:pointer;border-bottom:3px solid transparent;font-family:inherit;white-space:nowrap;transition:.15s}
+.stnav button:hover{color:var(--navy)}
+.stnav button.on{color:var(--navy);border-bottom-color:var(--blue);background:#fff}
+.stbody{padding:32px}
+.stpane{display:none}
+.stpane.on{display:block}
+.stpane .who{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);margin:0 0 9px}
+.stpane h3{font-size:21px;margin-bottom:11px;line-height:1.3}
+.stpane p{color:var(--ink2);margin-bottom:0;max-width:660px;font-size:15.5px}
+.stfoot{display:flex;align-items:center;gap:14px;padding:18px 32px;border-top:1px solid var(--line);background:var(--soft)}
+.stfoot button{padding:9px 16px;border-radius:6px;border:1px solid var(--line);background:#fff;font-size:13.5px;font-weight:700;color:var(--navy);cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:7px}
+.stfoot button:hover{border-color:var(--blue);color:var(--blue)}
+.stfoot button svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2.2}
+.dots{display:flex;gap:7px;margin-left:auto}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--blueLine);cursor:pointer;border:0;padding:0}
+.dot.on{background:var(--blue);width:22px;border-radius:5px}
+.ask{border:1px solid var(--line);border-radius:12px;padding:26px;background:#fff;box-shadow:var(--sh);margin-bottom:14px}
+.askh{display:flex;gap:14px;align-items:flex-start;margin-bottom:14px}
+.askav{width:38px;height:38px;border-radius:50%;background:var(--navy);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ask .who{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);margin:0 0 4px;font-weight:700}
+.ask .q{font-size:17px;font-weight:700;margin:0;color:var(--navy);line-height:1.35}
+.ask p{font-size:15px;color:var(--ink2)}
+.calc{display:grid;grid-template-columns:1fr 360px;gap:30px;align-items:start}
+.slbox{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:26px}
+.sl{margin-bottom:22px}
+.sl:last-child{margin-bottom:0}
+.sl label{display:flex;justify-content:space-between;font-size:14px;font-weight:700;color:#fff;margin-bottom:10px;gap:12px}
+.sl label span{color:#9FD0FF;background:rgba(27,150,255,.16);padding:2px 10px;border-radius:20px;font-size:13.5px}
+.sl input[type=range]{width:100%;height:5px;border-radius:3px;background:rgba(255,255,255,.2);appearance:none;outline:none;cursor:pointer}
+.sl input[type=range]::-webkit-slider-thumb{appearance:none;width:20px;height:20px;border-radius:50%;background:var(--blueMid);cursor:pointer;border:3px solid #043A66;box-shadow:0 2px 6px rgba(0,0,0,.3)}
+.sl .hint{font-size:12.5px;color:#8FB6DB;margin-top:7px}
+.out{background:#fff;border-radius:12px;padding:26px;color:var(--ink);box-shadow:0 8px 30px rgba(0,0,0,.18)}
+.out h3{font-size:15px;margin-bottom:18px;display:flex;align-items:center;gap:9px}
+.out h3 svg{width:18px;height:18px;stroke:var(--blue);fill:none;stroke-width:2}
+.orow{display:flex;justify-content:space-between;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--line);font-size:14.2px;gap:12px}
+.orow .k{color:var(--ink2)}
+.orow .v{font-weight:700;color:var(--navy);white-space:nowrap;font-size:15px}
+.obig{background:linear-gradient(135deg,var(--blueBg),var(--blueBg2));border-radius:10px;padding:22px;text-align:center;margin-top:20px}
+.obig .v{font-size:36px;font-weight:700;color:var(--navy);letter-spacing:-1.2px;line-height:1}
+.obig .l{font-size:12.5px;color:var(--navy2);margin-top:8px;font-weight:600}
+.disc{font-size:12.5px;color:#8FB6DB;margin-top:20px;max-width:640px}
+table{width:100%;border-collapse:collapse;font-size:14.8px;background:#fff;border-radius:12px;overflow:hidden;box-shadow:var(--sh)}
+th{text-align:left;font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:#fff;font-weight:700;padding:15px 20px;background:var(--navy)}
+td{padding:17px 20px;border-bottom:1px solid var(--line);color:var(--ink2);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td strong{color:var(--ink);font-weight:700}
+.tag{display:inline-block;font-size:11.5px;font-weight:700;padding:4px 11px;border-radius:30px;white-space:nowrap}
+.t-done{background:var(--greenBg);color:var(--green)}
+.t-now{background:var(--blueBg2);color:var(--navy)}
+.t-next{background:#EFEFEF;color:var(--ink3)}
+.t-p1{background:var(--blueBg2);color:var(--navy)}
+.t-p2{background:var(--orangeBg);color:var(--orangeInk)}
+.retro{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-bottom:14px;background:#fff;box-shadow:var(--sh)}
+.retro .top{background:var(--navy);padding:16px 24px;display:flex;align-items:center;gap:12px}
+.retro .top h3{margin:0;color:#fff;font-size:17px}
+.retro .top svg{width:20px;height:20px;stroke:#9FD0FF;fill:none;stroke-width:1.9}
+.retro .body{padding:22px 24px}
+.retro .body p{font-size:15px;color:var(--ink2)}
+.team{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.tm{border:1px solid var(--line);border-radius:12px;padding:22px 18px;background:#fff;text-align:center;box-shadow:var(--sh)}
+.av{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--sky));color:#fff;font-size:16px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 13px}
+.tm .nm{font-size:14.5px;font-weight:700;color:var(--navy);line-height:1.3}
+.tm .rl{font-size:12.8px;color:var(--ink3);margin-top:4px;line-height:1.4}
+.cta{text-align:center;padding:76px 0}
+.cta h2{font-size:34px;color:#fff;margin-bottom:15px;letter-spacing:-.8px}
+.cta p{color:#C9E0F5;max-width:580px;margin:0 auto 30px;font-size:17px}
+footer{background:#02203F;color:#88AACB;padding:34px 0;font-size:13.5px;border-top:1px solid rgba(255,255,255,.08)}
+footer a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.3)}
+#top{position:fixed;right:22px;bottom:22px;width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;border:0;cursor:pointer;display:none;align-items:center;justify-content:center;box-shadow:0 5px 18px rgba(3,45,96,.35);z-index:70}
+#top.on{display:flex}
+#top svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2.2}
+@media(max-width:960px){.calc{grid-template-columns:1fr}.team{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr}}
+@media(max-width:760px){header h1{font-size:31px}h2{font-size:25px}.wrap,.navin{padding:0 20px}.g2,.g4{grid-template-columns:1fr}
+.flow{grid-template-columns:1fr}.arw{transform:rotate(90deg)}.flip{height:auto;min-height:200px}
+.navin{height:auto;flex-direction:column;align-items:stretch;gap:0;padding:0}
+.brand{padding:12px 20px 8px}
+.navlinks{margin-left:0;padding:0 20px 10px;gap:6px;-webkit-overflow-scrolling:touch}
+.navlinks a{font-size:12.5px;padding:6px 10px;background:rgba(255,255,255,.07)}
+html{scroll-padding-top:104px}
+.bahead,.barow{grid-template-columns:1fr}.bahead .h0{display:none}.barow .lbl{border-bottom:1px solid var(--line)}
+.accb{padding-left:24px}.lay{flex-direction:column;gap:14px}.stbody{padding:24px}}
+</style>
+</head>
+<body>
+
+<svg style="display:none">
+<symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.5-1.5"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15v3M12 9v9M17 5v13"/></symbol>
+<symbol id="i-mega" viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M16 8a5 5 0 0 1 0 8"/><path d="M19 5a9 9 0 0 1 0 14"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 13 4 4L19 7"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><path d="M16 20v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 20v-2a4 4 0 0 0-3-3.8"/><path d="M16 3.2A4 4 0 0 1 16 11"/></symbol>
+<symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+<symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.5 5.5a4 4 0 1 0 4 6.6L21 14.6a2 2 0 0 1-2.8 2.8l-2.5-2.5a4 4 0 0 1-6.6-4"/><path d="m9 15-5.5 5.5"/></symbol>
+<symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 2v6M15 2v6"/><path d="M6 8h12v4a6 6 0 0 1-12 0V8z"/><path d="M12 18v4"/></symbol>
+<symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></symbol>
+<symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19a4.5 4.5 0 0 0 .5-9 6 6 0 0 0-11.6-1.5A4 4 0 0 0 7 19z"/></symbol>
+<symbol id="i-arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+<symbol id="i-up" viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></symbol>
+<symbol id="i-left" viewBox="0 0 24 24"><path d="M19 12H5M11 18l-6-6 6-6"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="m2 7 10 6 10-6"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="3.5"/></symbol>
+<symbol id="i-grow" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-1.5 4L16 12H5"/></symbol>
+<symbol id="i-sf" viewBox="0 0 24 24"><path d="M17.5 19a4.5 4.5 0 0 0 .5-9 6 6 0 0 0-11.6-1.5A4 4 0 0 0 7 19z"/></symbol>
+</svg>
+
+<div id="prog"></div>
+
+<nav>
+  <div class="navin">
+    <span class="brand"><svg viewBox="0 0 24 24"><use href="#i-sf"/></svg> LSC &nbsp;|&nbsp; Salesforce</span>
+    <div class="navlinks">
+      <a href="#why">Why Salesforce</a>
+      <a href="#priorities">Priorities</a>
+      <a href="#today">Today vs. After</a>
+      <a href="#challenges">Challenges</a>
+      <a href="#arch">Architecture</a>
+      <a href="#shown">Demo Recap</a>
+      <a href="#day">A Day at LSC</a>
+      <a href="#value">Capacity Model</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#plan">Next Steps</a>
+    </div>
+  </div>
+</nav>
+
+<header id="hero">
+  <div class="orb o1"></div><div class="orb o2"></div>
+  <div class="wrap">
+    <p class="eyebrow"><svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2"><use href="#i-flag"/></svg> Prepared for Lake Superior Consulting · September 2026</p>
+    <h1>One platform for both sides of your business</h1>
+    <p class="lede">A unified system for business development, proposals, project delivery, field operations and client experience — built to grow with LSC for the next 10 to 20 years.</p>
+    <div class="btns">
+      <a class="btn btn-p" href="#why">Why Salesforce <svg viewBox="0 0 24 24"><use href="#i-arr"/></svg></a>
+      <a class="btn btn-s" href="#value">Model your capacity gain</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><svg viewBox="0 0 24 24"><use href="#i-layers"/></svg><div class="v" data-to="2">0</div><div class="l">Revenue lines on one platform — engineering and field</div></div>
+      <div class="stat"><svg viewBox="0 0 24 24"><use href="#i-plug"/></svg><div class="v" data-to="5">0</div><div class="l">Systems connected: Unanet, PowerBI, SharePoint, Outlook and Teams</div></div>
+      <div class="stat"><svg viewBox="0 0 24 24"><use href="#i-db"/></svg><div class="v" data-to="1">0</div><div class="l">Source of truth, replacing email and spreadsheets</div></div>
+    </div>
+  </div>
+</header>
+
+<section id="why">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="kicker"><svg viewBox="0 0 24 24"><use href="#i-spark"/></svg> Why Salesforce</span>
+      <h2>Three reasons this is the right platform for LSC</h2>
+      <p class="sub">Drawn from what your team told us across four conversations</p>
+    </div>
+
+    <div class="pillar rv">
+      <p class="n">01 — One system, not a Frankenstein</p>
+      <h3>The only option on your list that brings all of it into one platform</h3>
+      <p>Your team was direct about why previous rollouts didn't take hold: a system stitched together from separate tools never became the place people actually worked. Adoption failed, and the data went back into inboxes and spreadsheets.</p>
+      <p>As you continue up your technology maturity curve, the question stops being which CRM is best and becomes which platform can still hold everything you're trying to streamline — business development, sales, proposals, project delivery, field operations, marketing and client experience. Salesforce is the only option under evaluation that covers all of it natively, on one data model, with one login. Nothing has to be bolted on beside it later.</p>
+    </div>
+
+    <div class="pillar rv">
+      <p class="n">02 — Off the shelf, and still shaped to your business</p>
+      <h3>You don't have to choose between out of the box and a real fit</h3>
+      <p>Most of what you asked for is standard: centralized client and contact management, pipeline tracking and forecasting, opportunity to proposal to project linkage, approval workflows, dashboards, Microsoft 365 integration, role-based permissions and auditability. No development, no custom build, no maintenance burden on your IT team.</p>
+      <p>Where your business is genuinely unique — tagging strategic opportunities by margin and relationship depth, flagging an opportunity with no contact in two weeks, scheduling technicians against certifications, your specific BD to account manager to proposal handoff — those are configured by an administrator, not coded by a developer. That's the difference between a packaged product that bends only as far as its assumptions allow, and a platform that fits the way you actually work.</p>
+    </div>
+
+    <div class="pillar orangeTop rv">
+      <p class="n">03 — Capacity is the return</p>
+      <h3>This is a revenue lever, not an efficiency cost</h3>
+      <p>You're at capacity today. But that ceiling isn't entirely a headcount problem — a meaningful share of it is manual data entry, work re-created between systems, proposals chased through email, and project history reconstructed from memory.</p>
+      <p>Recover that time and you create real capacity. Combine it with deliberately pursuing repeat work from clients you've already earned, and getting your thought leadership in front of your top target accounts, and you don't just do the same work faster — you get to <strong>choose better work</strong>. Higher margin per hour, with the team you already have.</p>
+      <div class="flow">
+        <div class="step3"><svg viewBox="0 0 24 24"><use href="#i-clock"/></svg><p class="t">Recover</p><p class="d">Time lost to duplicate entry, manual handoffs and reconstructing history</p></div>
+        <div class="arw"><svg viewBox="0 0 24 24"><use href="#i-arr"/></svg></div>
+        <div class="step3"><svg viewBox="0 0 24 24"><use href="#i-target"/></svg><p class="t">Target</p><p class="d">Repeat work from existing clients, plus your named high-value prospects</p></div>
+        <div class="arw"><svg viewBox="0 0 24 24"><use href="#i-arr"/></svg></div>
+        <div class="step3"><svg viewBox="0 0 24 24"><use href="#i-grow"/></svg><p class="t">Choose</p><p class="d">Higher-margin projects, with capacity visible before you bid</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tint" id="priorities">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="kicker"><svg viewBox="0 0 24 24"><use href="#i-flag"/></svg> What we heard</span>
+      <h2>Your four priorities</h2>
+      <p class="sub">Confirmed by Missie at the top of the September 28 demonstration</p>
+    </div>
+    <div class="g4">
+      <div class="pri rv"><span class="badge">01</span><div class="icb"><svg class="ic"><use href="#i-link"/></svg></div>
+        <h3>A unified system, not a Frankenstein</h3>
+        <p>Adoption is the deciding factor. If people work across disconnected tools, the data doesn't get entered and the system stops being trusted.</p></div>
+      <div class="pri rv"><span class="badge">02</span><div class="icb"><svg class="ic"><use href="#i-chart"/></svg></div>
+        <h3>Transparency and reporting</h3>
+        <p>Move tribal knowledge into a single source of truth — so decisions don't depend on who remembers a conversation, and win/loss becomes measurable.</p></div>
+      <div class="pri rv"><span class="badge">03</span><div class="icb"><svg class="ic"><use href="#i-mega"/></svg></div>
+        <h3>Thought leadership and repeat revenue</h3>
+        <p>Keep clients engaged after a project closes, and get your expertise in front of the high-margin accounts you want to win.</p></div>
+      <div class="pri rv"><span class="badge">04</span><div class="icb"><svg class="ic"><use href="#i-layers"/></svg></div>
+        <h3>A platform for the next 10 to 20 years</h3>
+        <p>A foundation that adapts as your BD, account management and client experience teams take shape — not one you re-evaluate in two years.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="today">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="kicker"><svg viewBox="0 0 24 24"><use href="#i-grow"/></svg> The transformation</span>
+      <h2>Where the work goes today, and where it goes next</h2>
+      <p class="sub">Your current-state process, as your team described it across discovery</p>
+    </div>
+    <div class="bacmp rv">
+      <div class="bahead">
+        <div class="h0">Stage</div>
+        <div class="h1"><svg viewBox="0 0 24 24"><use href="#i-x"/></svg> Today</div>
+        <div class="h2"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg> With Salesforce</div>
+      </div>
+      <div class="barow"><div class="lbl">Lead intake</div><div class="now">Roughly 99% of opportunities come from relationships, events and referrals. Nothing systematically captures who spoke to whom.</div><div class="aft">Leads captured from forms, email and manual entry with source attribution. BD converts to account, contact and opportunity in one step.</div></div>
+      <div class="barow"><div class="lbl">Client history</div><div class="now">Lives in people's heads and personal Outlook contacts. A client was recently met twice on the same topic by two different people.</div><div class="aft">Every email, meeting and call logged from Outlook to a 360 account view, with relationship mapping showing who knows whom.</div></div>
+      <div class="barow"><div class="lbl">Commitments</div><div class="now">Tracked verbally. No systematic record of who owes what to whom, or by when.</div><div class="aft">Structured tasks with owners and due dates. Opportunities with no contact in two weeks flagged automatically.</div></div>
+      <div class="barow"><div class="lbl">Opportunity to proposal</div><div class="now">Sales works with project controls to build the proposal. Handoff runs through email with no shared status.</div><div class="aft">Proposals co-edited in connected SharePoint, linked to the opportunity, with review tasks and formal approval before sending.</div></div>
+      <div class="barow"><div class="lbl">Project creation</div><div class="now">Data re-entered into Unanet via Power App once a project is won.</div><div class="aft">MuleSoft syncs the won opportunity to Unanet two ways. Unanet stays system of record for time and billing. No duplicate entry.</div></div>
+      <div class="barow"><div class="lbl">Construction phase</div><div class="now">Handed to project management and tracked in an advanced Excel sheet.</div><div class="aft">Work orders and projects generated automatically from closed-won, replacing the spreadsheet.</div></div>
+      <div class="barow"><div class="lbl">Capacity and bidding</div><div class="now">No view of technician availability or certification coverage when deciding what to bid.</div><div class="aft">Dispatcher console with Gantt and map views, scheduling against skills, certifications and proximity. Utilization visible before you bid.</div></div>
+      <div class="barow"><div class="lbl">Project close-out</div><div class="now">No structured satisfaction capture. Follow-on work that should come from completed projects often isn't pursued.</div><div class="aft">Satisfaction capture triggered at completion, feeding a nurture track that surfaces follow-on work rather than waiting for it.</div></div>
+      <div class="barow"><div class="lbl">Marketing</div><div class="now">Thought leadership, case studies and the podcast sit on the website. Nothing proactively pushes them to clients or target accounts.</div><div class="aft">Engagement scoring shows which clients and prospects read your material. Targeted campaigns push thought leadership to named accounts.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="tint" id="challenges">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="kicker"><svg viewBox="0 0 24 24"><use href="#i-alert"/></svg> Challenges</span>
+      <h2>What's holding LSC back — and how it's solved</h2>
+      <p class="sub">Click any card to flip it</p>
+    </div>
+    <div class="g2">
+      <div class="flip rv"><div class="fin">
+        <div class="fface"><div class="icb rd"><svg class="ic"><use href="#i-users"/></svg></div><h3>Tribal knowledge</h3><p>Client history lives in individual memories and personal inboxes. Two people can call the same client about the same thing without knowing.</p><p class="fhint">Click to flip <svg viewBox="0 0 24 24"><use href="#i-arr"/></svg></p></div>
+        <div class="fface fback"><div class="icb"><svg class="ic"><use href="#i-db"/></svg></div><h3>360 account view</h3><p>Every interaction captured from Outlook and Teams, visible on one record, with relationship mapping across the client org.</p></div>
+      </div></div>
+      <div class="flip rv"><div class="fin">
+        <div class="fface"><div class="icb rd"><svg class="ic"><use href="#i-x"/></svg></div><h3>Adoption has failed before</h3><p>Past rollouts didn't stick. Systems stitched together meant engineers and PMs never made it their working home.</p><p class="fhint">Click to flip <svg viewBox="0 0 24 24"><use href="#i-arr"/></svg></p></div>
+        <div class="fface fback"><div class="icb"><svg class="ic"><use href="#i-mail"/></svg></div><h3>Capture where work happens</h3><p>Outlook and Teams native, with a purpose-built mobile app for field techs. No one is asked to go somewhere new.</p></div>
+      </div></div>
+      <div class="flip rv"><div class="fin">
+        <div class="fface"><div class="icb rd"><svg class="ic"><use href="#i-wrench"/></svg></div><h3>Field ops on spreadsheets</h3><p>Construction-phase work tracked in Excel. No view of technician certifications or availability when bidding new work.</p><p class="fhint">Click to flip <svg viewBox="0 0 24 24"><use href="#i-arr"/></svg></p></div>
+        <div class="fface fback"><div class="icb"><svg class="ic"><use href="#i-cal"/></svg></div><h3>Field Service</h3><p>Dispatcher console with Gantt and map views, certification-aware scheduling, and utilization reporting that informs what you bid.</p></div>
+      </div></div>
+      <div class="flip rv"><div class="fin">
+        <div class="fface"><div class="icb rd"><svg class="ic"><use href="#i-mega"/></svg></div><h3>Follow-on work left behind</h3><p>Completed projects should lead to more work but often aren't followed up. Thought leadership sits on the website.</p><p class="fhint">Click to flip <svg viewBox="0 0 24 24"><use href="#i-arr"/></svg></p></div>
+        <div class="fface fback"><div class="icb"><svg class="ic"><use href="#i-target"/></svg></div><h3>Nurture and engagement</h3><p>Close-out surveys trigger nurture. Engagement scoring shows who's reading what, so BD targets the right accounts.</p></div>
+      </div></div>
+      <div class="flip rv"><div class="fin">
+        <div class="fface"><div class="icb rd"><svg class="ic"><use href="#i-plug"/></svg></div><h3>Integration built by you</h3><p>Last time, connecting systems became your team's ongoing maintenance problem rather than a delivered outcome.</p><p class="fhint">Click to flip <svg viewBox="0 0 24 24"><use href="#i-arr"/></svg></p></div>
+        <div class="fface fback"><div class="icb"><svg class="ic"><use href="#i-link"/></svg></div><h3>MuleSoft, scoped up front</h3><p>Connectivity to Unanet, PowerBI and SharePoint, scoped and priced by The Hunley Group before you commit.</p></div>
+      </div></div>
+      <div class="flip rv"><div class="fin">
+        <div class="fface"><div class="icb rd"><svg class="ic"><use href="#i-chart"/></svg></div><h3>No measurable win/loss</h3><p>Win and loss reasons aren't captured consistently, so there's no basis for improving how you pursue work.</p><p class="fhint">Click to flip <svg viewBox="0 0 24 24"><use href="#i-arr"/></svg></p></div>
+        <div class="fface fback"><div class="icb"><svg class="ic"><use href="#i-check"/></svg></div><h3>Captured at close, by rule</h3><p>Loss reason required at close, reported by service line, client and competitor — not reconstructed afterward.</p></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section id="arch">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="kicker"><svg viewBox="0 0 24 24"><use href="#i-layers"/></svg> Architecture</span>
+      <h2>Nothing gets ripped out</h2>
+      <p class="sub">Salesforce becomes the front of the house. The systems you rely on stay, connected rather than replaced.</p>
+    </div>
+    <div class="lay rv"><div class="icb"><svg class="ic"><use href="#i-cloud"/></svg></div><div>
+      <h3>Salesforce Platform</h3><p>One data model across business development, sales, proposals, project delivery, field operations, marketing and client experience.</p>
+      <div class="chips"><span class="chip">Sales Cloud</span><span class="chip">Marketing Cloud</span><span class="chip">Field Service</span><span class="chip">Agentforce</span><span class="chip">Reports &amp; dashboards</span></div></div></div>
+    <div class="conn rv"><svg viewBox="0 0 24 24"><use href="#i-down"/></svg></div>
+    <div class="lay mule rv"><div class="icb"><svg class="ic"><use href="#i-plug"/></svg></div><div>
+      <h3>MuleSoft — the connectivity layer</h3><p>Two-way integration to your existing systems, scoped and priced by The Hunley Group before you commit.</p>
+      <div class="chips"><span class="chip">Pre-built connectors</span><span class="chip">Two-way sync</span><span class="chip">Monitored</span></div></div></div>
+    <div class="conn rv"><svg viewBox="0 0 24 24"><use href="#i-down"/></svg></div>
+    <div class="lay keep rv"><div class="icb"><svg class="ic"><use href="#i-db"/></svg></div><div>
+      <h3>Systems you keep</h3><p>Unanet remains your system of record for time tracking, project numbering, financial reporting and billing. PowerBI keeps serving Dustin's dashboards with live data. SharePoint stays where proposals are written, and Outlook and Teams stay where your people work.</p>
+      <div class="chips"><span class="chip">Unanet ERP</span><span class="chip">PowerBI</span><span class="chip">SharePoint</span><span class="chip">Outlook</span><span class="chip">Microsoft Teams</span><span class="chip">Power Apps</span></div></div></div>
+  </div>
+</section>
+
+<section class="tint" id="shown">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="kicker"><svg viewBox="0 0 24 24"><use href="#i-doc"/></svg> Demo recap</span>
+      <h2>What we showed you</h2>
+      <p class="sub">Mapped to each priority. Click any section to expand.</p>
+    </div>
+
+    <div class="acc rv"><button class="acch"><span class="ico"><svg class="ic"><use href="#i-link"/></svg></span><div style="flex:1"><h3>A unified system</h3><span class="cap">Outlook, Teams, SharePoint, mobile and Unanet in one place</span></div><span class="chev"><svg viewBox="0 0 24 24"><use href="#i-down"/></svg></span></button>
+      <div class="accb"><ul>
+        <li><svg><use href="#i-check"/></svg><span><strong>Outlook side panel</strong> — log emails, insert live calendar availability, use templates, and create or edit opportunities without leaving your inbox.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><strong>Teams and SharePoint on the record</strong> — connected channels and project files visible directly on the account.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><strong>MuleSoft to Unanet</strong> — two-way synchronization, so Unanet stays your system of record for time tracking and billing.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><strong>Mobile</strong> — account summaries and AI assistance for reps on the road; a separate purpose-built app for technicians on site.</span></li>
+      </ul></div></div>
+
+    <div class="acc rv"><button class="acch"><span class="ico"><svg class="ic"><use href="#i-chart"/></svg></span><div style="flex:1"><h3>Transparency and reporting</h3><span class="cap">Tribal knowledge into a single source of truth</span></div><span class="chev"><svg viewBox="0 0 24 24"><use href="#i-down"/></svg></span></button>
+      <div class="accb"><ul>
+        <li><svg><use href="#i-check"/></svg><span><strong>360-degree account view</strong> — contacts, past opportunities, project history, files and conversations in one place.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><strong>Relationship and org-chart mapping</strong> — see who knows whom, and who is a champion or a detractor.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><strong>Automatic activity capture</strong> — last contact date, email engagement and task history recorded without manual entry.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><strong>Structured task tracking</strong> — due dates, owners and links to the account or deal, replacing commitments tracked verbally.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><strong>Closed-loss feedback and win/loss reporting</strong> — captured by rule at close, not reconstructed afterward.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><strong>Agentforce</strong> — ask for a summary of an account's context or recent internal discussion on demand.</span></li>
+      </ul></div></div>
+
+    <div class="acc rv"><button class="acch"><span class="ico"><svg class="ic"><use href="#i-mega"/></svg></span><div style="flex:1"><h3>Thought leadership and repeat revenue</h3><span class="cap">Engagement scoring, targeted campaigns and nurture after close</span></div><span class="chev"><svg viewBox="0 0 24 24"><use href="#i-down"/></svg></span></button>
+      <div class="accb"><ul>
+        <li><svg><use href="#i-check"/></svg><span><strong>Engagement scoring</strong> — digital behavior tracking and campaign relationship meters on lead and account records, so you can see which clients and prospects actually read your material.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><strong>Natural-language audience and content builders</strong> — target a segment and generate dynamic email content without code.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><strong>Nurture after close</strong> — keep past clients engaged and surface follow-on work rather than waiting for it to come back on its own.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><strong>Deliverability management</strong> — domain authentication, reputation management, send-time optimization and monitoring dashboards.</span></li>
+      </ul></div></div>
+
+    <div class="acc rv"><button class="acch"><span class="ico"><svg class="ic"><use href="#i-wrench"/></svg></span><div style="flex:1"><h3>A platform that grows</h3><span class="cap">Field service, work orders and configuration without code</span></div><span class="chev"><svg viewBox="0 0 24 24"><use href="#i-down"/></svg></span></button>
+      <div class="accb"><ul>
+        <li><svg><use href="#i-check"/></svg><span><strong>Work orders and projects generated automatically</strong> from a closed-won opportunity.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><strong>Field Service dispatcher console</strong> — Gantt and map views, resource skills and certification requirements, location proximity and automated schedule optimization.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><strong>Technician mobile app</strong> — purpose-built for on-site work rather than a desktop CRM on a phone.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><strong>Configuration, not code</strong> — stages, approval workflows and record structure adjusted by an administrator as your teams change.</span></li>
+      </ul></div></div>
+  </div>
+</section>
+
+<section id="day">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="kicker"><svg viewBox="0 0 24 24"><use href="#i-clock"/></svg> In practice</span>
+      <h2>A day at Lake Superior Consulting</h2>
+      <p class="sub">One client moving through your process — with the system carrying the record instead of people's memories</p>
+    </div>
+    <div class="stepper rv">
+      <div class="stnav">
+        <button class="on" data-st="0">01 · First contact</button>
+        <button data-st="1">02 · Qualification</button>
+        <button data-st="2">03 · Proposal</button>
+        <button data-st="3">04 · Won</button>
+        <button data-st="4">05 · Scheduling</button>
+        <button data-st="5">06 · In the field</button>
+        <button data-st="6">07 · Close-out</button>
+        <button data-st="7">08 · Next project</button>
+      </div>
+      <div class="stbody">
+        <div class="stpane on"><p class="who">Business development</p><h3>A conversation at a conference gets recorded</h3><p>Your BD lead meets a reliability manager from a midstream operator at an industry event. Back in Outlook, the follow-up email is logged to a new lead in two clicks — source attributed to the event, so you can eventually tell which events actually produce work.</p></div>
+        <div class="stpane"><p class="who">Business development to account management</p><h3>Qualified and handed off cleanly</h3><p>The lead converts into an account, contact and opportunity in one step. Before the account manager makes a call, the 360 view shows that a corrosion specialist already has a relationship at that company — so the outreach builds on it instead of duplicating it.</p></div>
+        <div class="stpane"><p class="who">Sales and project controls</p><h3>Proposal built where your team already works</h3><p>Project controls drafts the proposal in the connected SharePoint folder, versioned as usual. Review tasks go to named people with due dates, and a formal approval step gates it before it reaches the client. The current draft is always findable from the opportunity.</p></div>
+        <div class="stpane"><p class="who">Operations</p><h3>Closed-won, with no re-entry</h3><p>MuleSoft pushes the project to Unanet, which remains the system of record for hours, budget and billing. Work orders and a project record are generated in Salesforce automatically — no Power App re-entry, no new spreadsheet.</p></div>
+        <div class="stpane"><p class="who">Project management</p><h3>Scheduled against certifications, not guesswork</h3><p>The dispatcher console shows which technicians hold the required certifications, who is available, and who is closest. Scheduling optimizes across all three. Utilization is visible — so when the next bid comes in, you know whether you actually have the capacity to take it.</p></div>
+        <div class="stpane"><p class="who">Field operations</p><h3>The crew works from a purpose-built app</h3><p>Technicians see the work order, site details and required steps on a mobile app designed for field use. Notes, photos and completion status are captured on site, so the project record stays current without anyone writing it up later.</p></div>
+        <div class="stpane"><p class="who">Client experience</p><h3>Close-out actually happens</h3><p>Project completion triggers the satisfaction capture your team wants — a structured close-out plus a survey link. The result lands on the account, giving you a measurable view of client health rather than an impression.</p></div>
+        <div class="stpane"><p class="who">Marketing and BD</p><h3>The project generates the next project</h3><p>The account enters a nurture track. Your case studies, podcast and thought leadership go to them deliberately, and engagement scoring shows what they read. When they're ready for the next phase of work, you're already in the conversation — and the follow-on opportunity is in pipeline instead of lost.</p></div>
+      </div>
+      <div class="stfoot">
+        <button id="stPrev"><svg viewBox="0 0 24 24"><use href="#i-left"/></svg> Previous</button>
+        <button id="stNext">Next <svg viewBox="0 0 24 24"><use href="#i-arr"/></svg></button>
+        <div class="dots" id="stDots"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="value">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="kicker"><svg viewBox="0 0 24 24"><use href="#i-grow"/></svg> Capacity model</span>
+      <h2>What recovered capacity is worth</h2>
+      <p class="sub">Move the sliders to model LSC's own assumptions. Nothing here is a Salesforce projection — it's your arithmetic.</p>
+    </div>
+    <div class="calc">
+      <div>
+        <div class="slbox">
+          <div class="sl"><label>Client-facing staff <span id="o-staff">90</span></label><input type="range" id="i-staff" min="40" max="140" step="5" value="90"><div class="hint">Your seller-doer population — the people who touch clients</div></div>
+          <div class="sl"><label>Hours per person per week lost to admin <span id="o-hrs">3</span></label><input type="range" id="i-hrs" min="1" max="8" step="0.5" value="3"><div class="hint">Duplicate entry, rebuilding history, chasing proposal status</div></div>
+          <div class="sl"><label>Blended billable rate <span id="o-rate">$145</span></label><input type="range" id="i-rate" min="80" max="260" step="5" value="145"><div class="hint">Average rate across engineering and field services</div></div>
+          <div class="sl"><label>Share of recovered time that becomes billable <span id="o-cap">40%</span></label><input type="range" id="i-cap" min="10" max="80" step="5" value="40"><div class="hint">Deliberately conservative — not all recovered time bills</div></div>
+          <div class="sl"><label>Annual revenue <span id="o-rev">$60M</span></label><input type="range" id="i-rev" min="30" max="110" step="5" value="60"><div class="hint">Base for modelling improvement in work mix</div></div>
+          <div class="sl"><label>Margin improvement from better work mix <span id="o-mgn">1.5 pts</span></label><input type="range" id="i-mgn" min="0" max="5" step="0.5" value="1.5"><div class="hint">From pursuing repeat and target-account work over low-margin bids</div></div>
+        </div>
+        <p class="disc">This model is illustrative and driven entirely by the inputs above. It is not a guarantee of results. We would rather build it with your finance team using real baselines than present a number you can't verify.</p>
+      </div>
+      <div class="out">
+        <h3><svg viewBox="0 0 24 24"><use href="#i-chart"/></svg> Modelled annual impact</h3>
+        <div class="orow"><span class="k">Hours recovered per year</span><span class="v" id="r-hours">—</span></div>
+        <div class="orow"><span class="k">Billable capacity created</span><span class="v" id="r-cap">—</span></div>
+        <div class="orow"><span class="k">Margin gain from better mix</span><span class="v" id="r-mgn">—</span></div>
+        <div class="orow" style="border-bottom:0"><span class="k">Equivalent added headcount</span><span class="v" id="r-heads">—</span></div>
+        <div class="obig"><div class="v" id="r-total">—</div><div class="l">Combined annual opportunity</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="derisk">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="kicker"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg> De-risking</span>
+      <h2>The two things that stalled a rollout before</h2>
+      <p class="sub">Both were named by your team, and both are addressed directly</p>
+    </div>
+    <div class="retro rv"><div class="top"><svg viewBox="0 0 24 24"><use href="#i-users"/></svg><h3>Adoption</h3></div><div class="body">
+      <p>Your seller-doer culture means nearly everyone touches clients — which is why this needs 80 to 100 seats rather than a small team. A system that asks engineers and project managers to go somewhere new will not get used.</p>
+      <p style="margin-bottom:0">So capture happens inside Outlook and Teams, where the work already is, and field technicians get a purpose-built mobile app rather than a desktop CRM. Adoption is a design constraint here, not a training problem to solve after go-live.</p>
+    </div></div>
+    <div class="retro rv"><div class="top"><svg viewBox="0 0 24 24"><use href="#i-plug"/></svg><h3>Integration</h3></div><div class="body">
+      <p>Last time, the connection between systems had to be built and maintained by you. That is the part we want to take off your plate.</p>
+      <p style="margin-bottom:0">MuleSoft provides the connectivity layer to Unanet, PowerBI and SharePoint, and <strong>The Hunley Group will scope and price the integration before you commit</strong> — so it arrives as a defined deliverable with an owner and a number, not an open-ended project.</p>
+    </div></div>
+  </div>
+</section>
+
+<section id="roadmap">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="kicker"><svg viewBox="0 0 24 24"><use href="#i-layers"/></svg> Roadmap</span>
+      <h2>A phased path</h2>
+      <p class="sub">Solve the immediate problem first — the platform is already there when you're ready for the rest</p>
+    </div>
+    <div class="rv"><table>
+      <thead><tr><th style="width:105px">Phase</th><th>Scope</th><th style="width:200px">Outcome</th></tr></thead>
+      <tbody>
+        <tr><td><span class="tag t-p1">Phase 1</span></td>
+          <td><strong>CRM, marketing and integration.</strong> Lead through opportunity to proposal, structured task and activity tracking, 360 account view, Outlook and Teams capture, SharePoint proposal workflow, engagement and nurture programs, MuleSoft to Unanet and PowerBI.</td>
+          <td>Single source of truth. Tribal knowledge captured. Repeat and referral work pursued deliberately.</td></tr>
+        <tr><td><span class="tag t-p2">Phase 2</span></td>
+          <td><strong>Field service.</strong> Work orders generated from closed-won deals, dispatcher console with Gantt and map views, scheduling against technician skills and certifications, utilization and capacity reporting, technician mobile app.</td>
+          <td>Field operations off spreadsheets. Capacity visible when you bid, not after you win.</td></tr>
+      </tbody>
+    </table></div>
+    <div class="card hi rv" style="margin-top:20px">
+      <p style="margin:0;font-size:15px"><strong>On capacity.</strong> Missie raised that capacity tracking is a critical bottleneck when bidding new work. Phase 2 is where that becomes measurable — but the platform decision is made in Phase 1. Choosing a system that already contains field service means Phase 2 is a deployment, not another evaluation.</p>
+    </div>
+  </div>
+</section>
+
+<section class="tint" id="plan">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="kicker"><svg viewBox="0 0 24 24"><use href="#i-cal"/></svg> Next steps</span>
+      <h2>Mutual action plan</h2>
+      <p class="sub">Updated following the September 28 demonstration</p>
+    </div>
+    <div class="rv"><table>
+      <thead><tr><th>Step</th><th style="width:200px">Target</th><th style="width:125px">Status</th></tr></thead>
+      <tbody>
+        <tr><td>Intro call and discovery</td><td>September 1</td><td><span class="tag t-done">Complete</span></td></tr>
+        <tr><td>Technical discovery</td><td>September 10</td><td><span class="tag t-done">Complete</span></td></tr>
+        <tr><td>Solution demonstration</td><td>September 28</td><td><span class="tag t-done">Complete</span></td></tr>
+        <tr><td>Vendor of choice confirmed</td><td>Early October</td><td><span class="tag t-next">Proposed</span></td></tr>
+        <tr><td>Integration scoping with The Hunley Group</td><td>Early October, ahead of the onsite</td><td><span class="tag t-next">Proposed</span></td></tr>
+        <tr><td><strong>Leadership session and investment review</strong><br><span style="font-size:13.5px;color:var(--ink3)">Onsite at your offices in Duluth, with The Hunley Group's integration scope in hand</span></td><td>Mid October</td><td><span class="tag t-next">Proposed</span></td></tr>
+        <tr><td>Decision and signature</td><td>End of October</td><td><span class="tag t-next">Proposed</span></td></tr>
+        <tr><td>Implementation begins</td><td>November</td><td><span class="tag t-next">Proposed</span></td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="kicker"><svg viewBox="0 0 24 24"><use href="#i-users"/></svg> Your team</span>
+      <h2>The people in the room — and after signature</h2>
+      <p class="sub">A team-based approach, not a handoff to strangers at implementation</p>
+    </div>
+    <div class="team">
+      <div class="tm rv"><div class="av">MM</div><div class="nm">Matt Moynan</div><div class="rl">Account Executive</div></div>
+      <div class="tm rv"><div class="av">HB</div><div class="nm">Hemingway Benton</div><div class="rl">Regional Sales Manager</div></div>
+      <div class="tm rv"><div class="av">AF</div><div class="nm">Arlinda Fasliu</div><div class="rl">Solutions Engineer</div></div>
+      <div class="tm rv"><div class="av">AD</div><div class="nm">Adam D'Addario</div><div class="rl">Marketing Solutions</div></div>
+      <div class="tm rv"><div class="av">CT</div><div class="nm">Caroline Trefelner</div><div class="rl">MuleSoft Integration</div></div>
+      <div class="tm rv"><div class="av">PR</div><div class="nm">Paymaun Rezai</div><div class="rl">Marketing Cloud</div></div>
+      <div class="tm rv"><div class="av">MM</div><div class="nm">Mike Messina</div><div class="rl">The Hunley Group<br>Implementation</div></div>
+      <div class="tm rv"><div class="av">TS</div><div class="nm">Tyler Schickner</div><div class="rl">Solution Strategy</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark cta" id="cta">
+  <div class="wrap">
+    <h2>Ready for the next conversation?</h2>
+    <p>We'd like to bring this to Ryan and your leadership team onsite in Duluth, with The Hunley Group scoping the Unanet integration alongside it.</p>
+    <div class="btns" style="justify-content:center;margin-bottom:0">
+      <a class="btn btn-p" href="mailto:mmoynan@salesforce.com?subject=Lake%20Superior%20Consulting%20-%20Next%20Steps">Email Matt <svg viewBox="0 0 24 24"><use href="#i-arr"/></svg></a>
+      <a class="btn btn-s" href="#plan">Review the plan</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Confidential — prepared for Lake Superior Consulting by Salesforce &nbsp;|&nbsp; September 2026<br>
+    Matt Moynan · Account Executive · <a href="mailto:mmoynan@salesforce.com">mmoynan@salesforce.com</a>
+  </div>
+</footer>
+
+<button id="top" aria-label="Back to top"><svg viewBox="0 0 24 24"><use href="#i-up"/></svg></button>
+
+<script>
+document.documentElement.classList.add('js');
+document.querySelectorAll('.flip').forEach(function(f){f.addEventListener('click',function(){f.classList.toggle('on')})});
+document.querySelectorAll('.acch').forEach(function(b){b.addEventListener('click',function(){b.parentElement.classList.toggle('on')})});
+
+var stBtns=[].slice.call(document.querySelectorAll('.stnav button')),
+    stPanes=[].slice.call(document.querySelectorAll('.stpane')),
+    dotWrap=document.getElementById('stDots'),cur=0;
+stBtns.forEach(function(b,i){
+  var d=document.createElement('button');d.className='dot'+(i===0?' on':'');d.setAttribute('aria-label','Step '+(i+1));
+  d.addEventListener('click',function(){go(i)});dotWrap.appendChild(d);
+  b.addEventListener('click',function(){go(i)});
+});
+var dots=[].slice.call(dotWrap.children);
+function go(i){
+  cur=Math.max(0,Math.min(stPanes.length-1,i));
+  stBtns.forEach(function(x,j){x.classList.toggle('on',j===cur)});
+  stPanes.forEach(function(x,j){x.classList.toggle('on',j===cur)});
+  dots.forEach(function(x,j){x.classList.toggle('on',j===cur)});
+  stBtns[cur].scrollIntoView({block:'nearest',inline:'nearest'});
+}
+document.getElementById('stPrev').addEventListener('click',function(){go(cur-1)});
+document.getElementById('stNext').addEventListener('click',function(){go(cur+1)});
+
+function usd(n){return '$'+Math.round(n).toLocaleString()}
+function usdK(n){if(n>=1000000){return '$'+(n/1000000).toFixed(2)+'M'}return '$'+Math.round(n/1000)+'K'}
+function calc(){
+  var staff=+document.getElementById('i-staff').value,hrs=+document.getElementById('i-hrs').value,
+      rate=+document.getElementById('i-rate').value,cap=+document.getElementById('i-cap').value,
+      rev=+document.getElementById('i-rev').value,mgn=+document.getElementById('i-mgn').value;
+  document.getElementById('o-staff').textContent=staff;
+  document.getElementById('o-hrs').textContent=hrs;
+  document.getElementById('o-rate').textContent=usd(rate);
+  document.getElementById('o-cap').textContent=cap+'%';
+  document.getElementById('o-rev').textContent='$'+rev+'M';
+  document.getElementById('o-mgn').textContent=mgn.toFixed(1)+' pts';
+  var hours=staff*hrs*46,capVal=hours*(cap/100)*rate,mgnVal=rev*1000000*(mgn/100);
+  document.getElementById('r-hours').textContent=Math.round(hours).toLocaleString()+' hrs';
+  document.getElementById('r-cap').textContent=usdK(capVal);
+  document.getElementById('r-mgn').textContent=usdK(mgnVal);
+  document.getElementById('r-heads').textContent=(hours/1800).toFixed(1)+' FTE';
+  document.getElementById('r-total').textContent=usdK(capVal+mgnVal);
+}
+['i-staff','i-hrs','i-rate','i-cap','i-rev','i-mgn'].forEach(function(id){
+  document.getElementById(id).addEventListener('input',calc)});
+calc();
+
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})
+},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(function(el,i){el.style.transitionDelay=(i%4)*60+'ms';io.observe(el)});
+
+var counted=false;
+var cio=new IntersectionObserver(function(es){
+  if(counted)return;
+  es.forEach(function(e){
+    if(!e.isIntersecting)return;
+    counted=true;
+    document.querySelectorAll('.stat .v').forEach(function(el){
+      var to=+el.dataset.to,c=0,steps=26,inc=to/steps,i=0;
+      var t=setInterval(function(){i++;c+=inc;if(i>=steps){c=to;clearInterval(t)}el.textContent=Math.round(c)},26);
+    });
+  });
+},{threshold:.3});
+if(document.querySelector('.stats'))cio.observe(document.querySelector('.stats'));
+
+var secs=[].slice.call(document.querySelectorAll('section[id],header[id]')),
+    links=[].slice.call(document.querySelectorAll('.navlinks a')),
+    prog=document.getElementById('prog'),topBtn=document.getElementById('top');
+function onScroll(){
+  var h=document.documentElement;
+  prog.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';
+  topBtn.classList.toggle('on',h.scrollTop>700);
+  var y=h.scrollTop+120,act=null;
+  secs.forEach(function(s){if(s.offsetTop<=y)act=s.id});
+  links.forEach(function(a){a.classList.toggle('act',a.getAttribute('href')==='#'+act)});
+}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+topBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+</script>
+</body>
+</html>
